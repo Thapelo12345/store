@@ -1,0 +1,45 @@
+footer{
+    position: relative;
+    margin-top: 5%;
+    width: 98vw;
+    height: 30vh;
+    overflow: hidden;
+}
+#svg-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -2;
+}   
+ul{
+    display: flex;
+    flex-flow: row;
+    text-emphasis: none;
+    list-style: none;
+    align-self: center;
+    z-index: 0;
+}
+li{
+    margin: .5%;
+}
+a{
+font-size: 1.2em;
+cursor: pointer;
+}
+.footer-svg{
+    width: 40%;
+    height: 40%;
+    z-index: 1;
+}
+
+p{
+    position: relative;
+    left: 18%;
+    bottom: 35%;
+    text-shadow: .2px 0px 0px black;
+    font-size: 1.2em;
+    width: 55%;
+    color: white;
+    z-index: 2;
+}

@@ -1,24 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import './app.css'
+import Screen from './Landing pages/screen/screen'
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom'
+import { Navigate } from 'react-router-dom';
+import Header from './header/header'
+import { ViewAll } from './pages/view-all';
+import { MenView } from './pages/men-view';
+import { WomenView } from './pages/women-view';
+import { Accessories } from './pages/accessories';
+import { Footer } from './footer/footer'
+import { OrderForm } from './forms/order-form';
+import { ConfirmationForm } from './forms/confirmation-form';
+import { store } from './status/store';
+import { Provider} from 'react-redux';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+       <>
+        <Provider store={store}>
+    <Router>
+    <Header />
+    <OrderForm />
+    <ConfirmationForm />
+    
+    <Routes>
+      <Route path = '/' element = {<Screen />} />
+      <Route path = 'view-all' element = {<ViewAll />} />  //default value view-all
+      <Route path = 'women' element = {<WomenView />} />  //default value women
+      <Route path = 'men' element = {<MenView/>} />   /*default value men*/
+      <Route path = 'accessories' element = {<Accessories />} />    //default value accessories
+      <Route path="*" element={<Navigate to="/" />} />
+    </Routes>
+    </Router>
+    <Footer />
+    </Provider>
+      </>
   );
 }
 

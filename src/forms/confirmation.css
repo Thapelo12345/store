@@ -1,0 +1,121 @@
+#confirmation-form{
+    border: 1px solid red;
+    position: fixed;
+    top: 10%;
+    left: 0;
+    transition-duration: .5s;
+    transform: scale(.1);
+    width: 34vw;
+    height: 75vh;
+    background-color: rgba(0, 255, 0, 0.50);
+    box-shadow: 1px 11px 30px black;
+    border-radius: 10px;
+    visibility: hidden;
+    z-index: -3;
+}
+
+#main-title{
+    font-size: 1.2em;
+    font-family: serif;
+    letter-spacing: 0;
+    border-radius: 5px;
+    padding: .5%;
+    /* background-color: black; */
+    background-image: linear-gradient(0deg, lightgray, black);
+    border: .1px solid lime;
+    color: white;
+    text-shadow: 1px 0px 0px black;
+    box-shadow: 1px 10px 24px black;
+}
+
+#order-id{
+    font-size: 1em;
+    align-self: center;
+    margin-top: 1%;
+}
+
+#inner-border{
+    display: flex;
+    flex-flow: column;
+    margin: 2%;  
+    border-radius: 5px;
+    /* background-color: black; */
+    background-image: linear-gradient(0deg, black, gray);
+    box-shadow: 1px 10px 20px black;
+    border: .1px solid lime;
+    /* border: none; */
+}
+
+.customer-infor{
+    font-size: 1.3em;
+    /* color: lime; */
+    margin-bottom: 1.5%;
+    word-spacing: 10px;
+    transition-duration: .1s;
+    text-shadow: 1px 0px 0px cyan;
+    font-weight: bold;
+}
+
+.customer-infor:hover{
+    border: .1px solid black;
+    transform: scale(1.01);
+    width: max-content;
+    padding: 1%;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 1px 9px 30px gray;
+
+    .value-infor{
+        text-decoration: underline;
+        color: steelblue;
+    
+    }
+}
+.value-infor{
+    /* color: steelblue; */
+    color: white;
+    /* text-shadow: 1px 0px 0px brown; */
+    font-weight: bold;
+    text-shadow: none
+}
+
+.confirmation-buttons{
+    position: relative;
+    left: 30%;
+    margin: 2%;
+    width: 17%;
+    height: 10%;
+    font-size: 1.2em;
+    font-family: Gothic;
+    font-weight: lighter;
+    transition-duration: .3s;
+    border-radius: 5px;
+    color: white;
+    border: .1px solid darkorange;
+    box-shadow: 1px 6px 10px black;
+    text-shadow: 1px 0px 0px black;
+    background-image: linear-gradient(90deg, blue, skyblue)
+}
+
+.confirmation-buttons:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 14px 20px darkgreen;
+}
+dialog{
+    width: 30vw;
+    border-radius: 10px;
+    border: none;
+    background-image: linear-gradient(90deg, brown, purple, aqua);
+    box-shadow: 1px 8px 40cap black;
+    z-index: 0;
+}
+
+.dialog-paragraph{
+    color: white;
+    text-shadow: 1px 0px 0px black;
+}
+kbd{
+    border: 2px solid white;
+    padding: 1%;
+}
+
