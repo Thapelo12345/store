@@ -130,6 +130,7 @@
     border-radius: 10px;
 }
 .size-buttons:hover{
+    transform: scale(1.1);
     color: cyan;
     border: .1px solid gray;
     text-shadow: 1px 0px 0px black;
@@ -158,8 +159,7 @@
     cursor: pointer;
 }
 #submit-button:hover{
-    transform: scale(1.0.8);
-    /* color: blue; */
+    transform: scale(1.08);
     font-weight: lighter;
     box-shadow: .1px -1px 1px grey;
     text-shadow: 1px 0px 0px black;
