@@ -337,7 +337,7 @@ const itemList = [
 
     {
     id: 49,
-    picUrl:"./Pics/female/accessories/jewelry/jewelry6.jpg",
+    picUrl: "./Pics/female/accessories/jewelry/jewelry6.jpg",
     colors: ['silver'],
     price: 89.07
     },
