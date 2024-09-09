@@ -130,7 +130,6 @@
     border-radius: 10px;
 }
 .size-buttons:hover{
-    transform: scale(1.1);
     color: cyan;
     border: .1px solid gray;
     text-shadow: 1px 0px 0px black;
