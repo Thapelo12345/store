@@ -1,0 +1,7 @@
+@media only screen and (max-width: 789px){
+
+    body{background-color: black;}
+    #root{
+        border: 1px solid red;
+    }
+}
