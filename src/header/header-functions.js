@@ -36,7 +36,6 @@ function purchase(){
 
         openForms('order')
 
-        // $('body').css('overflow', 'hidden')
         $("#purchase-button").css({
             textShadow: '1px 0px 0px black',
             boxShadow: '1px 9px 30px lime',

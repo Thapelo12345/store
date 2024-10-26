@@ -1,9 +1,9 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
-import $ from 'jquery';
+// import $ from 'jquery';
 import './header.css';
-import {  CartIcon, BinIcon } from '../Icons/icons'
+import {  CartIcon } from '../Icons/icons'
 import { store } from '../status/store';
 import { openMiniScreen } from '../min-cart-screen/mini-cart-screen';
 

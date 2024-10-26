@@ -1,6 +1,7 @@
 import React from 'react';
 import { useEffect } from 'react';
 import './screen.css';
+import './mobile-screen.css'
 import { slide, indexer1, indexer2, indexer3, indexer4, changePicture } from './screen-functions'
 import { store } from '../../status/store';
 import { itemList } from '../Items';

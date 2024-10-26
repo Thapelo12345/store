@@ -2,13 +2,15 @@ import $ from 'jquery';
 import '../header/header.css'
 import { store } from '../status/store';
 import { subtractAmount, sumbmitted, subtract } from '../status/actions';
-import { userArr } from '../userPurchase/user-items';
+import { userArr, emptyArray } from '../userPurchase/user-items';
 
 var formDetails = {}
 
 function openForms(formToOpen){
     if(formToOpen === 'order'){
 
+$('.cart-button').prop('disabled', true)
+  
         $('#order-form-container').css({
             visibility: 'visible',
             top: '3%',
@@ -18,6 +20,7 @@ function openForms(formToOpen){
     
     }
     else if(formToOpen === 'confirm'){
+$('.cart-button').prop('disabled', true)
 
         $('#confirmation-form').css({
             visibility: 'visible',
@@ -34,6 +37,8 @@ function closeForms(formToClose){
 
 if(formToClose === 'order'){
         //closing order form
+$('.cart-button').prop('disabled', false)
+
 $('#order-form-container').css({
     transform: 'scale(.1)',
     top: '-30%'
@@ -43,12 +48,17 @@ let pause = setTimeout(()=>{
         visibility: 'hidden',
         zIndex: '-3'
     })
+
+    clearTimeout(pause)
 }, 500)
 //done closing order form
 
 }//end of if
 
     else if(formToClose === 'confirm'){
+
+$('.cart-button').prop('disabled', false)
+
         $('#confirmation-form').css({
             left: '0',
             transform: 'scale(.1)'
@@ -76,6 +86,9 @@ function cancel(){
     })//end of purchase button design
 
 closeForms('order')
+
+$('.cart-button').prop('disabled', false)
+
 
  $('#names').val('')
 $('#surname').val('')
@@ -140,6 +153,7 @@ store.dispatch(sumbmitted())
 }//end of order form submit
 
 function confirm(){
+
 //lets reset store values
 let amount = store.getState().price
 store.dispatch(subtractAmount(amount))
@@ -152,7 +166,12 @@ const dialog = document.getElementById('dialog')
 dialog.showModal()
 cancel()
 closeForms('confirm')
-// alert('')
+
+// i need clear purchase arr
+$('.useritemContainer').each(function(){
+    $(this).remove()
+})
+emptyArray()
 }//end of confirm func
 
 export { cancel, openForms, closeForms, orderFormSubmit, formDetails, confirm }

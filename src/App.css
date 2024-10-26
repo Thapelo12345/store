@@ -1,3 +1,6 @@
 body{
-    position: relative;
+    width: 98vw;
+    height: auto;
+    padding: 0;
+    overflow-x: hidden;
 }

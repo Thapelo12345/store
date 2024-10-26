@@ -1,5 +1,6 @@
 import React from 'react'
 import './order-form.css'
+import './order-form-mobile.css'
 import { cancel, closeForms, orderFormSubmit } from './forms-functions'
 
 //date setUp
@@ -36,19 +37,19 @@ function OrderForm(){
     <fieldset id = 'customer-details-section'>
     <legend className = 'legend-labels'>Customer infor</legend>
         <label className = 'customers-details-label' htmlFor = 'names' required>Name</label>
-        <input type = 'text' id = 'names' ></input>
+        <input type = 'text' id = 'names' ></input><br />
 
         <label className='customers-details-label' htmlFor = 'surname' required>Surname</label>
-        <input type = 'text' id = 'surname'></input>
+        <input type = 'text' id = 'surname'></input><br />
 
         <label className='customers-details-label' htmlFor = 'email'>Email</label>
-        <input type = 'email' id = 'email' placeholder='paypal email if possible'></input>
+        <input type = 'email' id = 'email' placeholder='paypal email if possible'></input><br />
 
         <label className='customers-details-label' htmlFor = 'phone' required>Tel no:</label>
-        <input type = 'tel' id = 'phone'></input>
+        <input type = 'tel' id = 'phone'></input><br />
 
         <label className='customers-details-label' htmlFor = 'address'>Address</label>
-        <input type = 'text' id = 'address' required></input>
+        <input type = 'text' id = 'address' required></input><br />
     </fieldset>
 
     <section id = 'payment-delivery'>

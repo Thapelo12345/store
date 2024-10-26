@@ -1,4 +1,5 @@
 import './app.css'
+import './mobile-app.css'
 import Screen from './Landing pages/screen/screen'
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import { Navigate } from 'react-router-dom';

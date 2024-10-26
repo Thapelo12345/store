@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react"
 import './confirmation.css'
-import $ from 'jquery'
+import './confirmation-form-mobile.css'
 import { closeForms, openForms, formDetails, confirm } from "./forms-functions"
 import { store } from "../status/store"
 import { unSubmitted } from "../status/actions"
 import { useSelector } from "react-redux"
-// import { formDetails } from "./forms-functions"
 
 function ConfirmationForm(){
  var {testSubmit}= useSelector((state)=> state.formSubmit)

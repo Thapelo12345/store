@@ -1,10 +1,11 @@
 footer{
     position: relative;
     margin-top: 5%;
-    width: 98vw;
+    width: 101%;
     height: 30vh;
     overflow: hidden;
 }
+
 #svg-bg{
     position: absolute;
     top: 0;

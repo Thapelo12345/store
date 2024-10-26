@@ -1,0 +1,145 @@
+#select-form{
+position: fixed;
+top: 10%;
+left: 20%;
+width: 50vw;
+height: 65vh;
+background-color: rgba(110, 110, 110, 0.3);
+backdrop-filter: blur(10px);
+box-shadow: .1px .1px 30px black;
+border-radius: 10px;
+z-index: 1;
+}
+
+#price-image{
+    display: flex;
+    flex-flow: row;
+    width: 98%;
+    height: 40%;
+    margin: 1%;
+}
+
+#item-pic{
+    border: 1px solid lime;
+    border-radius: 10px;
+    box-shadow: 1px .1px 20px black;
+    height: 90%;
+    width: 36%;
+    margin: 1%;
+}
+
+#infor-tag{
+    display: flex;
+    flex-flow: column;
+    border: 1px solid white;
+    background-color: rgba(12, 100, 255, 0.6);
+    border-radius: 10px;
+    margin: 1%;
+    width: 60%;
+    height: 90%;    
+}
+
+.tags{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 2px 0px 0px black;
+    margin: 1%;
+}
+
+.select-sections{
+    width: 97%;
+    margin-top: 3%;
+    margin-left: 1.5%;
+    height: 15%;
+}
+
+.color-btn{
+    width: max-content;
+    transition-duration: .2s;
+    height: 50%;
+    margin: 1%;
+    font-size: 1.2em;
+    font-weight: lighter;
+    border-radius: 5px;
+    background-image: linear-gradient(0deg, cyan, white);
+    border: .1px solid aqua;
+    cursor: pointer;
+}
+.color-btn:hover{
+   transform: scale(1.3);
+   box-shadow: 1px 1px 60px white;
+   color: white;
+}
+
+#size-dropdown{
+    width: 17%;
+    height: 55%;
+    outline: none;
+    font-size: 1em;
+    border: .1px solid cyan;
+    color: blue;
+    background-image: linear-gradient(0deg,aqua, white);
+    border-radius: 9px;
+}
+
+#size-dropDown:focus{
+    outline: none;
+    border: .1px solid lime;
+    background-image: linear-gradient(0deg,aqua, white, pink);
+}
+
+
+#size-dropdown option:focus{
+    background-color: lime;
+    color: green;
+}
+
+#size-label{
+    color: blue;
+    text-shadow: 1px 0px 0px pink;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 2%;
+    border: 1px solid aqua;
+    box-shadow: 1px 1px 30px cyan;
+    background-image: linear-gradient(0deg, gray, white);
+    padding: 1%;
+    border-radius: 9px;
+}
+
+.size-btn{
+    width: max-content;
+    height: 50%;
+    margin: 1%;
+    font-size: 1.2em;
+    transition-duration: .2s;
+    border: .1px solid cyan;
+    background-image: linear-gradient(0deg, cyan, white);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.size-btn:hover{
+    transform: scale(1.3);
+    color: white;
+    box-shadow: .1px .1px 60px white;
+}
+
+.form-btn{
+    width: 15%;
+    height: 10%;
+    font-size: 1em;
+    transition-duration: .2s;
+    margin-left: 23%;
+    margin-top: 2%;
+    cursor: pointer;
+    border-radius: 5px;
+    border: .1px solid lime;
+    background-image: linear-gradient(0deg, lime, white);
+}
+.form-btn:hover{
+    color: white;
+    transform: scale(1.1);
+    font-size: 1.4em;
+    box-shadow: .1px .1px 50px white;
+    text-shadow: 1px 0px 0px black;
+}

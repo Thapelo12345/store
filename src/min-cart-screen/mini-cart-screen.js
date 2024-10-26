@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import $ from 'jquery'
 import './min-cart-screen.css'
+import './min-cart-screen-mobile.css'
 import { userArr } from '../userPurchase/user-items'
 import { useSelector } from 'react-redux'
-import { BinIcon } from '../Icons/icons'
 import { store } from '../status/store'
 import { subtractAmount, subtract } from '../status/actions'
 
@@ -36,6 +36,7 @@ function deleteItems(valueItem){
 }//end of delete func
 
 function openMiniScreen(){
+
    if(store.getState().itemCount > 0){
     $(".cart-button").prop('disabled', true)
     $('#outer-screen').css({
@@ -86,18 +87,17 @@ useEffect(()=>{
 
         let priceValue = document.createElement('span')
         $(priceValue).addClass('value-display')
-        $(priceValue).text(ob.price.toString())
+        $(priceValue).text(ob.price)
 
         $(itemPrice).append($(priceValue))
 
         let itemColor = document.createElement('h4')
         $(itemColor).addClass('labels')
-        // $(itemColor).text('color: ' + item.color)
         $(itemColor).text('color: ')
 
         let colorValue = document.createElement('span')
         $(colorValue).addClass('value-display')
-        $(colorValue).text(ob.color)
+        $(colorValue).text(ob.color.split(':')[1])
 
         $(itemColor).append($(colorValue))
 
@@ -107,7 +107,7 @@ useEffect(()=>{
 
         let sizeValue = document.createElement('span')
         $(sizeValue).addClass('value-display')
-        $(sizeValue).text(ob.size)
+        $(sizeValue).text(ob.size.split(':')[1])
 
         $(itemSize).append($(sizeValue))
     
@@ -119,12 +119,9 @@ useEffect(()=>{
         let deleteButton = document.createElement('button')
         $(deleteButton).addClass('delete-button')
         $(deleteButton).attr('value', itemId.toString())
-        // $(deleteButton).prop('value', itemId.toString())
-        // $(deleteButton).append(icon)
         $(deleteButton).text('delete')
         $(deleteButton).click((e)=>{
 
-            console.log(e.target.value)
             deleteItems(e.target.value)
         })
 
@@ -137,7 +134,7 @@ useEffect(()=>{
 
     }//end of outer if
     else{setCounter(store.getState().itemCount)}
-}, [testCounter])
+}, [testCounter] )
 
   return (
     <>

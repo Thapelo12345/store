@@ -1,7 +1,5 @@
 :root{
- /* --nav-bg-color: rgb(20, 118, 247); */
  --nav-bg-img: linear-gradient(0deg, white, blue);
-
 }
 
 #header{
@@ -19,6 +17,7 @@
     perspective: 250px;
     z-index: 1;
 }
+
 #bg{
     background-color: whitesmoke;
     left: 8%;
@@ -32,7 +31,6 @@
 }
 
 #navBar{
-    /* border: 1px solid lime; */
     position: relative;
     display: flex;
     flex-flow: row;
@@ -44,26 +42,22 @@
     border-radius: 10px;
     background-image: var(--nav-bg-img);
     z-index: -2;
-    /* overflow: hidden; */
 }
 
 .nav-button{
 position: relative;
-/* margin-top: 1%; */
 margin-left: 8%;
 font-size: 1em;
 width: 9%;
 height: 96%;
 transition-duration: .5;
 border: none;
-/* background-image: var(--nav-bg-img); */
 background: none;
 border-radius: 50%;
 cursor: pointer;
 }
 
 .svg-nav-icons{
-    /* position: absolute; */
     width: 80%;
     height: 80%;
 }
@@ -75,8 +69,6 @@ cursor: pointer;
     width: 80%;
     height: 80%;
     transition-duration: .5s;
-    /* background-color: var(--nav-bg-color); */
-    /* background-image: var(--nav-bg-img); */
     background: none;
     border-radius: 50%; 
 }
@@ -90,7 +82,6 @@ cursor: pointer;
     transition-duration: .2s;
     color: white;
     text-shadow: 3px 0px 0px black;
-    /* font-size: .5em; */
     visibility: hidden;
     z-index: -1;  
 }
@@ -100,13 +91,11 @@ cursor: pointer;
     left: 32%;
     display: flex;
     flex-flow: row;
-    /* border: 1px solid red;    */
     width: 27%;
     height: 70%;
     margin-top: .3%;
 }
 #price{
-    /* border: 1px solid blue;   */
     position: relative;
     top: 16%;
     display: flex;
@@ -118,6 +107,7 @@ cursor: pointer;
     border-radius: 10px;
     overflow-x: hidden;
 }
+
 #price:hover{
     transform: scale(1.02);
     box-shadow: .1px -6px 10px gray;
@@ -129,7 +119,6 @@ cursor: pointer;
     text-shadow: 2px 0px 0px black;
 }
 #cart{
-    /* border: 1px solid lime; */
     display: flex;
     flex-flow: row;
     position: relative;
@@ -140,12 +129,9 @@ cursor: pointer;
     width: 47%;
     height: 65%;
     border-radius: 10px;
-    /* overflow: hidden; */
 }
 
-#cart:hover{
-    box-shadow: -.1px -6px 8px grey;
-}
+#cart:hover{box-shadow: -.1px -6px 8px grey;}
 
  #cart div h6{
     position: relative;
@@ -163,6 +149,7 @@ cursor: pointer;
     top: 20%;
     font-size: 1.2em;
  }
+ 
  #svg-button{
     position: relative;
     left: 10%;
@@ -188,16 +175,6 @@ cursor: pointer;
     top: -6%;
  }
 
-#infor-screen h1{
-    color: white;
-    text-shadow: 3px .1px 0px black;
-    font-variant-caps: all-small-caps;
-    margin: 0;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    text-align: center;
-    background: var(--nav-bg-img);
-}
 #purchase-button{
     position: relative;
     font-size: 1em;
@@ -215,6 +192,7 @@ cursor: pointer;
     border: none;
     cursor: pointer;
 }
+
 #purchase-button:hover{
     transform: scale(1.08);
     box-shadow: -.1px -8px 5px gray;

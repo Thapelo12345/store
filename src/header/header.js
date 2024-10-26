@@ -6,6 +6,7 @@ import { purchase } from './header-functions';
 import { useEffect, useState } from 'react';
 import $ from 'jquery';
 import './header.css';
+import './mobile-header.css'
 import { store } from '../status/store'
 import { changeNavigator } from '../status/actions';
 
@@ -132,7 +133,9 @@ return(
 <NavBar />
 <Cart amountPrice = {amountPrice} counter = {counter}/>
 <CartMiniScreen />
-<button id  = 'purchase-button' onClick = {purchase }>Purchase</button>
+
+<button id = 'purchase-button' onClick = { purchase }>Purchase</button>
+
 </div>
 
     )

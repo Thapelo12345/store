@@ -1,5 +1,6 @@
 import React from 'react'
 import './footer.css'
+import './mobile-footer.css'
 import { Facebook, Twitter, Instagram, Whatsapp, WavyBg } from '../Icons/icons'
 
 function Footer() {
