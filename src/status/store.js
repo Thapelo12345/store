@@ -1,6 +1,5 @@
 import { combineReducers } from 'redux';
 import { createStore } from 'redux';
-import { sumbmitted } from './actions';
 
 const defualtyState = {navigate: "home"}
 const HOME = 'HOME'

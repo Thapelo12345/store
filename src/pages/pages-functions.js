@@ -15,7 +15,7 @@ function inforScreen(){
     
     let screenPic = $('<img>')
     screenPic.attr('id', 'screen-pic')
-    screenPic.attr('src', './demo-store/Pics/question mark.jpeg')
+    screenPic.attr('src', './store/Pics/question mark.jpeg')
     screenPic.attr('alt', 'item image')
     screenPic.appendTo(itemInfor)
 
@@ -341,7 +341,7 @@ function hoverElements(){
                 $('#price-display').text('R')
                 $('#color-display').empty()
                 $('#size-display').empty()
-                $('#screen-pic').attr('src', './demo-store/Pics/question mark.jpeg')
+                $('#screen-pic').attr('src', './store/Pics/question mark.jpeg')
             }//mouse out
         )
     })
