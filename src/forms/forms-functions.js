@@ -26,7 +26,7 @@ $('.cart-button').prop('disabled', true)
             visibility: 'visible',
             transform: 'scale(1)',
             zIndex: '3',
-            left: '20%'
+            left: '10%'
         })
     }
 }//end of open func

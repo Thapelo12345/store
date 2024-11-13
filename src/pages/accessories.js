@@ -1,19 +1,18 @@
 import React, { useEffect } from "react";
 import { createItems } from "./pages-functions";
 import './viewAll.css'
-import './viewAll-mobile.css'
+import './viewAll-pad.css'
 import './selectForm.css'
 import './infor-screen.css'
-import './infor-screen-mobile.css'
-import './selectForm-mobile.css'
+import './selectionForm-mobile.css'
+import './infor-pad.css'
 import { itemList } from '../Landing pages/Items'
 
 function Accessories(){
     
-    useEffect(()=>{
+useEffect(()=>{
 
 var accessoriesArr = itemList.filter((item) =>{return item.picUrl.split('/').indexOf('accessories') !== -1})
-
 createItems(accessoriesArr)
 
 }, [])

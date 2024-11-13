@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
 import './confirmation.css'
-import './confirmation-form-mobile.css'
+import './pad-conformation-form.css'
 import { closeForms, openForms, formDetails, confirm } from "./forms-functions"
 import { store } from "../status/store"
 import { unSubmitted } from "../status/actions"
@@ -58,7 +58,8 @@ function ConfirmationForm(){
     </form>
 
     <dialog id = 'dialog'>
-<p className = 'dialog-paragraph'>Thank you so much for your recent purchase! We truly appreciate your support and trust in our products. 
+<p className = 'dialog-paragraph'>
+Thank you so much for your recent purchase! We truly appreciate your support and trust in our products. 
 </p>
 
         <p className = 'dialog-paragraph'>press <kbd>Esc</kbd> to exit</p>

@@ -1,11 +1,12 @@
 #view-all-screen{
-    margin-top: 7%;
+    position: relative;
+    margin-top: 1%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     padding: 1%;
-    width: 75vw;
+    max-width: 75vw;
 }
 .item-display{
     position: relative;
@@ -25,13 +26,15 @@
 }
 
 .pic{
+    display: block;
     width: 100%;
     height: 70%;
     border-radius: 10px;
 }
 
 .price-tag{
-    font-size: 1.3em;
+    /* font-size: 1.3rem; */
+    font-size: clamp(.7rem, 2vw, 1.3rem);
     font-weight: lighter;
     font-family: Georgia, Times, serif;
     text-align: center;
@@ -48,7 +51,8 @@
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     border: none;
-    font-size: 1.2em;
+    /* font-size: 1.2em; */
+    font-size: clamp(.8rem, 2vw, 1.2rem);
     font-weight: lighter;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     width: 100%;

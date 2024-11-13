@@ -6,7 +6,7 @@ import { purchase } from './header-functions';
 import { useEffect, useState } from 'react';
 import $ from 'jquery';
 import './header.css';
-import './mobile-header.css'
+import './header-pad.css'
 import { store } from '../status/store'
 import { changeNavigator } from '../status/actions';
 

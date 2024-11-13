@@ -1,0 +1,16 @@
+@media only screen and (max-width: 814px){
+    #view-all-screen{
+        max-width: 97vw;
+        
+    }
+
+    .item-display{
+        margin: .5%;
+        width: 28%;
+        height: 35vh;
+    }
+}
+
+@media only screen and (max-width: 674px){
+    .item-display{margin-left: 4%;}
+}

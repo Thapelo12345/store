@@ -1,0 +1,16 @@
+@media only screen and (max-width: 481px){
+
+    #view-all-screen{
+        border: 1px solid red;
+        margin-top: 24%;
+        margin-left: 1%;
+        width: 150%;
+    }
+
+    .item-display{
+        width: 22%;
+        height: 8%;
+    }
+    
+    .price-tag{font-size: .8rem;}
+}

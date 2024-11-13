@@ -1,5 +1,4 @@
-import './app.css'
-import './mobile-app.css'
+import './App.css'
 import Screen from './Landing pages/screen/screen'
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import { Navigate } from 'react-router-dom';
@@ -17,7 +16,7 @@ import { Provider} from 'react-redux';
 function App() {
 
   return (
-       <>
+       <div id='app'>
         <Provider store={store}>
     <Router>
     <Header />
@@ -35,7 +34,7 @@ function App() {
     </Router>
     <Footer />
     </Provider>
-      </>
+      </div>
   );
 }
 

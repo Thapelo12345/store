@@ -1,6 +1,5 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useEffect, useState } from 'react';
 import $ from 'jquery';
 import './header.css';
 import { HomeIcon, MaleIcon, FemaleIcon, MaleAndFemaleIcon, AccessoriesIcon } from '../Icons/icons'

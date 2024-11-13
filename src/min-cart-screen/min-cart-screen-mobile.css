@@ -1,26 +1,12 @@
-@media only screen and (max-width: 853px){
+@media only screen and (max-width: 481px){
     #outer-screen{
-        width: 95vw;
-        height: 45vh;
-        background-color: whitesmoke;
+        width: 95%;
         left: 1%;
     }
 
-    .useritemContainer{
-        position: relative;
-        padding-top: 1%;
-        margin-top: 4%;
-        width: 98%;
-        /* overflow: hidden; */
-    }
-    .labels{
-        font-size: 1em;
-    }
-    .delete-button{
-        position: absolute;
-        top: 55%;
-        left: 15%;
-        height: 38%;
-        width: 50%;
-    }
+    .labels{font-size: .9rem;}
+    .value-display{font: .9rem;}
+
+    .delete-button{font-size: .5rem;}
+
 }

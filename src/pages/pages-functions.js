@@ -48,7 +48,6 @@ function inforScreen(){
     hoverElements()
 }//end of infor screen
 
-
 export function createItems(arr){
 
     inforScreen()
@@ -76,7 +75,8 @@ export function createItems(arr){
             
             let priceTag = $('<h1></h1>')
             priceTag.addClass('price-tag')
-            priceTag.html('R ' + item.price.toString())
+            // priceTag.html('R ' + item.price.toString())
+            priceTag.text('R ' + item.price.toString())
 
             let cartButton = $('<button></button>')
             cartButton.addClass('cart-button')
@@ -277,7 +277,6 @@ else{alert('You Have not selected the color or size')}//end of else
         clrSection.empty()
     }//end of empty
 }//new cart funct
-
 
 function hoverElements(){
     $(document).ready(function(){

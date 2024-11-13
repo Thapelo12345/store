@@ -1,152 +1,102 @@
+:root{--header-colo: crimson;}
+
 #order-form-container{
     position: fixed;
-    border: 1px solid red;
-    top: 30%;
-    left: 30%;
-    width: 40vw;
-    height: 78vh;
+    border: .1px solid red;
+    top: 5%;
+    left: 20%;
+    min-width: 55vw;
+    max-height: 90vh;
     margin: auto;
     transition-duration: .5s;
     background: none;
+    backdrop-filter: blur(20px);
     border-radius: 10px;
-    visibility: hidden;
+    visibility: hidden; 
+    box-shadow: 1px 9px 20px black;
     z-index: 3;
 }
 
-#form-border{
-    width: 90%;
-    height: 70%;
-    margin: 2%;
-    background-color: rgba(153, 102, 102, 0.50);
-    border-radius: 10px;
-    box-shadow: 1px 20px 40px lightgrey;
-}
+h1, h3{font-family: Georgia, seri;}
 
-.legend-labels{
-    background-image: linear-gradient(0deg, lime, aqua);
-    font-size: 1.3em;
-    border-radius: 10px;
-    font-weight: lighter;
-    box-shadow: 1px 3px 10px black;
-    color: white;
-    text-shadow: 2px 0px 0px black;
-}
-
-#form-date{
-    display: flex;
-    flex-flow: column;
-    position: relative;
-    left: 65%;
-    width: 35%;
-    height: 13%;
-    padding-left: 1%;
-    border: none;
-    background-color: whitesmoke;
-    border-radius: 10px;
-    box-shadow: 1px 2px 10px black  ;
-}
-
-.date-labels{
-    font-size: 1em;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: lighter;
-    color: steelblue;
-}
-
-#customer-details-section{
-    padding: 1%;
+input[type=text], input[type=email], input[type=tel] {
+    border: .1px solid cyan;
+    min-width: 35%;
+    box-shadow: 1px 1px 10px gray;
     margin: 1%;
-    border-radius: 10px;
-    border: none    ;
-    background-color: whitesmoke;
-    box-shadow: 1px 4px 10px black;
+    border-radius: 2px;
 }
-
-#payment-delivery{
-    display: flex;
-    flex-flow: row;
-    height: 40%;
-    margin-top: 2%;
-    border-radius: 10px;
-}
-input[type="radio"] {
-    position: relative;
-    right: 15%;
-    margin-bottom: -4%;
-    vertical-align: middle;
-  }
-
-
-  input[type="text"], input[type="email"], input[type="tel"]{
-    border-radius: 5px;
-    margin: 1%;
-    border: .1px solid steelblue;
-    box-shadow: .1px 5px 5px lightgrey;
-    background-color: white;
-  }
-
-  input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus{
-    border: .1px solid lime;
+input[type=text], input[type=email], input[type=tel]:focus {
     outline: none;
-    background-color: lightgoldenrodyellow;
-    box-shadow: 1px 2px 10px black;
-  }
-
-  input{
-    transition-duration: .1s;
-  }
-input:hover{
-    transform: scale(1.1);
+    border: .1px solid lightgreen;
+    border-radius: 5px;
 }
 
-  .radio-labels{
-    position: relative;
-    bottom: 6%;    
-  }
+label{
+    font-size: clamp(.6rem, 2vw, 1.1rem);
+    margin-left: 4%;
+}
 
-.payment-and-delivery{
+#payment-and-delivery{
     display: flex;
-    flex-flow: column;
-    width: 50%;
-    height: 93%;
-    background-color: whitesmoke;
+    margin: 2%;
+    flex-direction: row;
+}
+#order-title{
+    text-align: center;
+    margin-top: 0;
+    font-size: clamp(.8rem, 2vw, 1.7rem);
+    color: var(--header-colo);
+}
+
+.pay-and-deliver{
+    border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(0deg, lightblue, steelblue);
+    box-shadow: 1px .1px 10px black;
+    min-width: 45%;
     margin: 1%;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 1px 4px 10px black;
+    padding: 1%;
+    border-radius: 5px;
+}
+
+.pay-and-deliver label{
+    position: relative;
+    bottom: 7%;
+}
+
+.subtitles{
+    text-align: center;
+    font-size: clamp(.7rem, 2vw, 1.2rem);
+    text-decoration: underline;
+    color: var(--header-colo)
 }
 
 .form-buttons{
-    position: relative;
-    left: 13%;
-    top: 9%;
-    margin-left: 10%;
-    font-size: 1.3em;
-    transition-duration: .1s;
-    font-weight: lighter;
-    border-radius: 10px;
-    border: 1px solid lightgreen;
-    background-image: linear-gradient(0deg, rgba(50, 178, 201, 0.5), rgba(153, 102, 102, 0.50));
-    text-shadow: 1px 0px 0px white;
-    width: 20%;
-    height: 10%;
-    box-shadow: 1px 5px 25px black;
+    margin-left: 20%;
+    margin-top: 0;
+    margin-bottom: 5%;
+    border-radius: 2%;
+    min-width: 15%;
+    min-height: 6vh;
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px black  ;
+    font-size: clamp(.6rem, 2vw, 1rem)
 }
 
-.form-buttons:hover{
-   font-size: 1.5em; 
-   color: white;
-   text-shadow: 1px 0px 0px black;
-    transform: scale(1.1);
-    box-shadow: 1px 9px 25px black;
-}
+.form-buttons:hover{transform: scale(1.1);}
 
-#form-cancel:hover{
+#form-cancel{
+    border: .1px solid crimson;
     background-image: linear-gradient(0deg, cyan, rgb(233, 49, 49));
     box-shadow: 2px 15px 55px red;
 }
-#form-submit:hover{
+#form-submit{
+    border: .1px solid lime;
     background-image: linear-gradient(0deg, cyan, lime);
     box-shadow: 2px 15px 55px lime;
-
 }

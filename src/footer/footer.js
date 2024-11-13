@@ -1,13 +1,12 @@
 import React from 'react'
 import './footer.css'
-import './mobile-footer.css'
+import './footer-pad.css'
 import { Facebook, Twitter, Instagram, Whatsapp, WavyBg } from '../Icons/icons'
 
 function Footer() {
   return (
     <>
-    <footer>
-<WavyBg />
+    <footer id='main-footer'>
     <ul>
         <li>
             <a href='https://www.facebook.com' target='_blank'><Facebook /></a>

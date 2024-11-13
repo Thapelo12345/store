@@ -6,8 +6,10 @@
     width: 22.3vw;
     height: 75vh;
     border-radius: 10px;
+    z-index: -1;
     
 }
+
 #infor-screen h1{
     color: white;
     text-shadow: 3px .1px 0px black;
