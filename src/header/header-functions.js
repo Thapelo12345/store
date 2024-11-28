@@ -27,7 +27,6 @@ $(idToChangeBack).children().eq(1).css({
       zIndex: '0',
       visibility: 'visible'
     })
-
     
 }//end of select menu func
 

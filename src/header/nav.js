@@ -14,13 +14,12 @@ function NavBar(){
 
         return(
             <nav id = 'navBar'>
+            
     <div id = 'bg'></div>
     
                 <button id = 'home' className = "nav-button" onClick={()=>{
                     navig("/")
-                    $('#bg').css({
-                        left: '8%'
-                    })
+                    $('#bg').css({left: '8%'})
     
                     let crrId = '#' + store.getState().navigator.navigate
                     store.dispatch(changeNavigator('home'))
